@@ -44,6 +44,10 @@ class Image
         $this->width = $width;
 
         $this->image = $this->openFile($this->path);
+
+        if (!$this->image) {
+           exit;
+        }
         $this->resize();
     }
 
