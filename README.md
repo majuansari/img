@@ -1,27 +1,17 @@
-# img
-For testing purposes, I have uploaded the script on my server.
- 
-URL: http://image-resize.ciprianspiridon.com/index.php?path=$path_of_the_file_to_load&height=$height&width=$width
+**Sample Url Structure** 
 
-```php 
-$path_of_the_file_to_load = [
-                "images/1.jpg",
-                "images/2.jpg",
-                "images/3.jpg",
-                "images/4.jpg",
-                "images/5.jpg",
-                "images/6.jpg",
-                "images/7.jpg",
-                "images/8.jpg"
-];
- ```
-```php
-$height = should be a number;
-```
-```php
-$width = should be a number;
-```
- 
-Example:
- - http://image-resize.ciprianspiridon.com/index.php?path=images/4.jpg&height=500&width=500
- - http://image-resize.ciprianspiridon.com/index.php?path=images/2.jpg&height=200&width=200
+    http://test.local:8001/shukran/testing/421/2520-x-928.jpg?size=800x450
+
+ - http://test.local:8001 => image resize service base url
+ - shukran => app name (config files are stored based on this and each app can have its own config)
+ - testing/421/2520-x-928.jpg => actual file path
+ - size=800x450  => size identifier ( now size is dynamic and can  generate thumbnails of any size)
+
+> Note: All the requests should be routed through index.php
+
+
+
+
+
+
+
